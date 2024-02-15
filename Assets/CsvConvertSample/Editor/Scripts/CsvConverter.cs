@@ -130,8 +130,8 @@ namespace CsvConvertSample.Editor
 
                 // 含まれるタグを列挙して格納
                 var totalTagsProp = serializedObj.FindProperty("totalTagsProp");
-                totalTagsProp.arraySize = totalTags.Count;
                 var totalTagList = totalTags.Distinct().ToArray(); // Distinctによって重複のタグを取り除く
+                totalTagsProp.arraySize = totalTagList.Length;
                 for (var i = 0; i < totalTagList.Length; i++)
                 {
                     totalTagsProp.GetArrayElementAtIndex(i).stringValue = totalTagList[i];
