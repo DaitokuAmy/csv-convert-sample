@@ -1,0 +1,556 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15140643faf80ec449b095d25905907d, type: 3}
+  m_Name: dat_table_quote
+  m_EditorClassIdentifier: 
+  quoteInfos:
+  - quote: "\u79C1\u306B\u3064\u3044\u3066\u6765\u308C\u308B\u304B\u3057\u3089\uFF1F"
+    tags:
+    - Invitation
+    - Challenge
+    - Expectation
+    - Adventure
+    - Leadership
+    - Exploration
+    - Mystery
+    - Friendship
+  - quote: "\u3053\u3044\u3064\u3092\u304F\u3089\u3048\uFF01"
+    tags:
+    - Attack
+    - Determination
+    - Combat
+    - Powerful
+    - Dynamic
+    - Action
+    - Challenge
+    - Victory
+  - quote: "\u6355\u98DF\u3058\u3083\uFF01\u6355\u98DF\u30FC\uFF01"
+    tags:
+    - Hunt
+    - Survival
+    - Wildness
+    - Instinct
+    - Attack
+    - Competition
+    - Combat
+    - FoodChain
+  - quote: "\u606F\u306E\u6839\u3092\u6B62\u3081\u3066\u6839\u7D76\u3084\u3057\u3067\u3059"
+    tags:
+    - Elimination
+    - Extinction
+    - Decisive
+    - End
+    - Combat
+    - Completion
+    - Resolution
+    - Victory
+  - quote: "\u3053\u308C\u304C\u30AA\u30EC\u306E\u5168\u529B\u3060\u30FC\uFF01"
+    tags:
+    - Determination
+    - FullPower
+    - SelfExpression
+    - Strength
+    - Combat
+    - Energy
+    - Enthusiasm
+    - Challenge
+  - quote: "\u30D0\u30FC\u30F3\u30D0\u30F3\u30D0\u30FC\u30F3\u30D0\u30F3\u266A"
+    tags:
+    - Joy
+    - Release
+    - Music
+    - Rhythm
+    - Entertainment
+    - Celebration
+    - Victory
+    - Euphoria
+  - quote: "\u307F\u306A\u3055\u30FC\u3093\u3001\u5927\u304D\u3044\u306E\u51FA\u307E\u3059\u3088"
+    tags:
+    - Announcement
+    - Expectation
+    - Surprise
+    - Adventure
+    - Warning
+    - Alert
+    - Discovery
+    - Challenge
+  - quote: "\u3093\uFF1F\u30E4\u30D0\u3052\u3058\u3083\u305E\u2026"
+    tags:
+    - Caution
+    - Anxiety
+    - Surprise
+    - Questioning
+    - Warning
+    - Alert
+    - Danger
+    - Intuition
+  - quote: "\u306A\u306B\u304B\u2026\u6012\u3063\u3066\u305D\u3046\u3067\u3059\uFF01"
+    tags:
+    - Anger
+    - Tension
+    - Warning
+    - Observation
+    - Caution
+    - Emotion
+    - Prediction
+    - Alertness
+  - quote: "SS\u30AF\u30E9\u30B9\u306E\u304A\u51FA\u307E\u3057\u3067\u3059\u304B"
+    tags:
+    - Elite
+    - Appearance
+    - Challenge
+    - Power
+    - Recognition
+    - Combat
+    - HighLevel
+    - Expectation
+  - quote: "\u3053\u306E\u307E\u307E\u5012\u3057\u304D\u308B\u305E\uFF01"
+    tags:
+    - Determination
+    - Finish
+    - Combat
+    - Endurance
+    - Attack
+    - Effort
+    - Resolution
+    - Victory
+  - quote: "\u3082\u3046\u5C11\u3057\u3088\uFF01"
+    tags:
+    - Encouragement
+    - Effort
+    - NearCompletion
+    - Support
+    - Endurance
+    - Motivation
+    - Persistence
+    - Goal
+  - quote: "\u3057\u3076\u3068\u3044\u3084\u3064\u3058\u3083\u306A\uFF01"
+    tags:
+    - Persistence
+    - Admiration
+    - Challenge
+    - Resilience
+    - Combat
+    - Opponent
+    - Recognition
+    - Toughness
+  - quote: "\u305D\u308D\u305D\u308D\u7D42\u308F\u3089\u305B\u307E\u3057\u3087\u3046"
+    tags:
+    - Conclusion
+    - Determination
+    - End
+    - Planning
+    - Combat
+    - Resolution
+    - FinalStage
+    - Efficiency
+  - quote: "\u6575\u3055\u3093\u591A\u3059\u304E\u3093\u304B\uFF1F"
+    tags:
+    - Overwhelmed
+    - EnemyQuantity
+    - Combat
+    - Challenge
+    - Observation
+    - Tactical
+    - Questioning
+    - Management
+  - quote: "\u304A\u3046\u304A\u3046\u3001\u5143\u6C17\u306A\u5C0F\u5A18\u3058\u3083\u306E\u3046\uFF01"
+    tags:
+    - Vivacity
+    - Youthfulness
+    - Admiration
+    - Surprise
+    - Encouragement
+    - Cheerfulness
+    - Energy
+    - Praise
+  - quote: "\u3055\u3059\u304C\u3058\u3083\u306E\uFF5E"
+    tags:
+    - Admiration
+    - Recognition
+    - Skill
+    - Achievement
+    - Praise
+    - Respect
+    - Impressed
+    - Excellence
+  - quote: "\u624B\u6D17\u3044\u3082\u5FD8\u308C\u305A\u306B\u3067\u3059\u3088\u266A"
+    tags:
+    - Precaution
+    - Health
+    - Reminder
+    - Care
+    - Hygiene
+    - Cheerfulness
+    - Advice
+    - Safety
+  - quote: "\u3048\u3001\u6016\u3044\u3093\u3060\u3051\u3069\u2026"
+    tags:
+    - Fear
+    - Anxiety
+    - Expression
+    - Concern
+    - Caution
+    - Emotion
+    - Warning
+    - Intimidation
+  - quote: "\u79C1\u306B\u3082\u5168\u529B\u3067\u304A\u9858\u3044\u3057\u307E\u3059"
+    tags:
+    - Request
+    - Effort
+    - Participation
+    - Teamwork
+    - Support
+    - Determination
+    - Encouragement
+    - Cooperation
+  - quote: "\u697D\u3057\u305D\u3046\u3067\u3059\u306D\u266A"
+    tags:
+    - Enjoyment
+    - Observation
+    - Cheerfulness
+    - Positivity
+    - Entertainment
+    - Leisure
+    - Pleasure
+    - Happiness
+  - quote: "\u3042\u3076\u306A\u3063\uFF01"
+    tags:
+    - Danger
+    - Alert
+    - QuickResponse
+    - Caution
+    - Warning
+    - Immediate
+    - Reaction
+    - Safety
+  - quote: "\u307F\u306A\u3055\u3093\u56DE\u907F\u884C\u52D5\u3092\uFF01"
+    tags:
+    - Evasion
+    - Action
+    - Safety
+    - Warning
+    - GroupCoordination
+    - Alert
+    - Precaution
+    - Tactical
+  - quote: "\u306A\u306B\u3053\u308C\uFF01\uFF1F"
+    tags:
+    - Surprise
+    - Curiosity
+    - Discovery
+    - Questioning
+    - Wonder
+    - Puzzlement
+    - Interest
+    - Exploration
+  - quote: "\u9000\u5C48\u3057\u306E\u304E\u306B\u30D4\u30C3\u30BF\u30EA\u3058\u3083\u308D"
+    tags:
+    - Entertainment
+    - BoredomRelief
+    - Suggestion
+    - Casual
+    - Leisure
+    - Choice
+    - Enjoyment
+    - Fit
+  - quote: "\u3044\u3044\u611F\u3058\u306B\u304A\u9858\u3044\u3057\u307E\u3059\uFF01"
+    tags:
+    - Request
+    - Optimism
+    - Coordination
+    - Teamwork
+    - Effort
+    - Encouragement
+    - SmoothExecution
+    - Hope
+  - quote: "\u6700\u5F8C\u307E\u3067\u6CB9\u65AD\u3059\u308B\u306A\u3088\uFF01"
+    tags:
+    - Vigilance
+    - Endurance
+    - Warning
+    - Combat
+    - Caution
+    - Persistence
+    - Preparedness
+    - Alertness
+  - quote: "\u8AB0\u304C\u592A\u3063\u305F\u3067\u3059\u3063\u3066\uFF01"
+    tags:
+    - Surprise
+    - Defensiveness
+    - Questioning
+    - SelfImage
+    - Misunderstanding
+    - Expression
+    - Humor
+    - Indignation
+  - quote: "\u305D\u3046\u601D\u3063\u3066\u305F\u3068\u3053\u308D\uFF01"
+    tags:
+    - Agreement
+    - Timing
+    - Appropriateness
+    - Confirmation
+    - Readiness
+    - Observation
+    - Decision
+    - Satisfaction
+  - quote: "\u57FA\u672C\u30AD\u30E2\u30A4\u3057\u306D"
+    tags:
+    - Disgust
+    - HonestFeedback
+    - Expression
+    - Criticism
+    - Humor
+    - Candidness
+    - Reaction
+    - SocialCommentary
+  totalTagsProp:
+  - Invitation
+  - Challenge
+  - Expectation
+  - Adventure
+  - Leadership
+  - Exploration
+  - Mystery
+  - Friendship
+  - Attack
+  - Determination
+  - Combat
+  - Powerful
+  - Dynamic
+  - Action
+  - Victory
+  - Hunt
+  - Survival
+  - Wildness
+  - Instinct
+  - Competition
+  - FoodChain
+  - Elimination
+  - Extinction
+  - Decisive
+  - End
+  - Completion
+  - Resolution
+  - FullPower
+  - SelfExpression
+  - Strength
+  - Energy
+  - Enthusiasm
+  - Joy
+  - Release
+  - Music
+  - Rhythm
+  - Entertainment
+  - Celebration
+  - Euphoria
+  - Announcement
+  - Surprise
+  - Warning
+  - Alert
+  - Discovery
+  - Caution
+  - Anxiety
+  - Questioning
+  - Danger
+  - Intuition
+  - Anger
+  - Tension
+  - Observation
+  - Emotion
+  - Prediction
+  - Alertness
+  - Elite
+  - Appearance
+  - Power
+  - Recognition
+  - HighLevel
+  - Finish
+  - Endurance
+  - Effort
+  - Encouragement
+  - NearCompletion
+  - Support
+  - Motivation
+  - Persistence
+  - Goal
+  - Admiration
+  - Resilience
+  - Opponent
+  - Toughness
+  - Conclusion
+  - Planning
+  - FinalStage
+  - Efficiency
+  - Overwhelmed
+  - EnemyQuantity
+  - Tactical
+  - Management
+  - Vivacity
+  - Youthfulness
+  - Cheerfulness
+  - Praise
+  - Skill
+  - Achievement
+  - Respect
+  - Impressed
+  - Excellence
+  - Precaution
+  - Health
+  - Reminder
+  - Care
+  - Hygiene
+  - Advice
+  - Safety
+  - Fear
+  - Expression
+  - Concern
+  - Intimidation
+  - Request
+  - Participation
+  - Teamwork
+  - Cooperation
+  - Enjoyment
+  - Positivity
+  - Leisure
+  - Pleasure
+  - Happiness
+  - QuickResponse
+  - Immediate
+  - Reaction
+  - Evasion
+  - GroupCoordination
+  - Curiosity
+  - Wonder
+  - Puzzlement
+  - Interest
+  - BoredomRelief
+  - Suggestion
+  - Casual
+  - Choice
+  - Fit
+  - Optimism
+  - Coordination
+  - SmoothExecution
+  - Hope
+  - Vigilance
+  - Preparedness
+  - Defensiveness
+  - SelfImage
+  - Misunderstanding
+  - Humor
+  - Indignation
+  - Agreement
+  - Timing
+  - Appropriateness
+  - Confirmation
+  - Readiness
+  - Decision
+  - Satisfaction
+  - Disgust
+  - HonestFeedback
+  - Criticism
+  - Candidness
+  - SocialCommentary
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
