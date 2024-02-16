@@ -129,12 +129,12 @@ namespace CsvConvertSample.Editor
                 }
 
                 // 含まれるタグを列挙して格納
-                var totalTagsProp = serializedObj.FindProperty("totalTagsProp");
-                var totalTagList = totalTags.Distinct().ToArray(); // Distinctによって重複のタグを取り除く
-                totalTagsProp.arraySize = totalTagList.Length;
-                for (var i = 0; i < totalTagList.Length; i++)
+                var totalTagsProp = serializedObj.FindProperty("totalTags");
+                totalTags = totalTags.Distinct().ToList(); // Distinctによって重複のタグを取り除く
+                totalTagsProp.arraySize = totalTags.Count;
+                for (var i = 0; i < totalTags.Count; i++)
                 {
-                    totalTagsProp.GetArrayElementAtIndex(i).stringValue = totalTagList[i];
+                    totalTagsProp.GetArrayElementAtIndex(i).stringValue = totalTags[i];
                 }
 
                 // QuoteTableDataに変更を反映

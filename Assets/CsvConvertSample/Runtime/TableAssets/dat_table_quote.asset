@@ -313,7 +313,7 @@ MonoBehaviour:
     - Inquiry
     - Assurance
     - Confusion
-  totalTagsProp:
+  totalTags:
   - Enthusiasm
   - Initiation
   - Adventure

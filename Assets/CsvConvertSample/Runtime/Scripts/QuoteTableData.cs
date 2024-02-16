@@ -24,6 +24,6 @@ namespace CsvConvertSample
         [Tooltip("セリフ情報リスト")]
         public QuoteInfo[] quoteInfos;
         [Tooltip("含まれているタグの一覧")]
-        public string[] totalTagsProp;
+        public string[] totalTags;
     }
 }
