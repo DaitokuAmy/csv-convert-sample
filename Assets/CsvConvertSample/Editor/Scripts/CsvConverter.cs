@@ -1,8 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using CsvHelper;
+using CsvHelper.Configuration.Attributes;
 
 namespace CsvConvertSample.Editor
 {
@@ -14,18 +18,26 @@ namespace CsvConvertSample.Editor
         /// <summary>
         /// CSVの1行あたりの情報（CSVの中身をここに展開する）
         /// </summary>
-        [Serializable]
         private class Record
         {
-            public string quote;
-            public string tag1;
-            public string tag2;
-            public string tag3;
-            public string tag4;
-            public string tag5;
-            public string tag6;
-            public string tag7;
-            public string tag8;
+            [Name("セリフ")]
+            public string Quote { get; set; }
+            [Name("タグ1")]
+            public string Tag1 { get; set; }
+            [Name("タグ2")]
+            public string Tag2 { get; set; }
+            [Name("タグ3")]
+            public string Tag3 { get; set; }
+            [Name("タグ4")]
+            public string Tag4 { get; set; }
+            [Name("タグ5")]
+            public string Tag5 { get; set; }
+            [Name("タグ6")]
+            public string Tag6 { get; set; }
+            [Name("タグ7")]
+            public string Tag7 { get; set; }
+            [Name("タグ8")]
+            public string Tag8 { get; set; }
         }
 
         [SerializeField] private TextAsset[] _sourceCsvAssets;
@@ -94,8 +106,14 @@ namespace CsvConvertSample.Editor
                     }
 
                     // CSVからデータ構造を読み込んでTotalRecordsに合成
-                    var records = CSVSerializer.Deserialize<Record>(csvAsset.text);
-                    totalRecords.AddRange(records);
+                    using (var reader = new StringReader(csvAsset.text))
+                    {
+                        using (var csvReader = new CsvReader(reader, CultureInfo.InvariantCulture))
+                        {
+                            var records = csvReader.GetRecords<Record>();
+                            totalRecords.AddRange(records);
+                        }
+                    }
                 }
 
                 //---- ここが出力（Export）部分 ----//
@@ -113,7 +131,7 @@ namespace CsvConvertSample.Editor
 
                     // セリフ文字列の格納
                     var quoteInfoProp = quoteInfosProp.GetArrayElementAtIndex(i);
-                    quoteInfoProp.FindPropertyRelative("quote").stringValue = record.quote;
+                    quoteInfoProp.FindPropertyRelative("quote").stringValue = record.Quote;
 
                     // 含まれるTagを配列として格納
                     var tags = GetTags(record);
@@ -157,14 +175,14 @@ namespace CsvConvertSample.Editor
         {
             return new[]
             {
-                record.tag1,
-                record.tag2,
-                record.tag3,
-                record.tag4,
-                record.tag5,
-                record.tag6,
-                record.tag7,
-                record.tag8,
+                record.Tag1,
+                record.Tag2,
+                record.Tag3,
+                record.Tag4,
+                record.Tag5,
+                record.Tag6,
+                record.Tag7,
+                record.Tag8,
             }.Where(x => !string.IsNullOrWhiteSpace(x)).ToArray();
         }
     }
